@@ -1,0 +1,80 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="style.css"/>
+ <script type="text/javascript" src="jquery.js"></script>
+ <script type="text/javascript" charset="utf-8">
+   function change_person_title(val) {
+     if (val == "male") {
+       $("#person_title").html("Mr.");
+     } else {
+        $("#person_title").html("Mrs.");
+     }
+   }
+
+   function change_person_name(val) {
+       $("#person_name_label").html(val);
+   }
+   
+</script>
+</head>
+<body>
+<div id="container">
+  <h2>Select list (dropdown)</h2>
+
+  <table border="0" cellspacing="1" cellpadding="1">    
+    <tr>
+      <td valign="top">Make: </td>
+      <td>
+        <form action="" >
+          <select name="car_make" id="car_make_select">
+            <option value="">-- Select --</option>
+            <option value="honda">Honda (Japan)</option>
+            <option value="volvo">Volvo (Sweden)</option>
+            <option value="audi">Audi (Germany)</option>
+          </select>
+        </form>
+      </td>
+    </tr>
+    <tr><td>&nbsp;</td><td></td></tr>
+    <tr><td>&nbsp;</td><td></td></tr>
+    <tr><td>&nbsp;</td><td></td></tr>
+    <tr>
+      <td valign="top">Framework: </td>
+      <td>
+        <form action="2">
+        <select id="framework_select" name="test_framework" multiple="multiple">
+          <option></option>
+          <option value="rwebspec">RWebSpec</option>
+          <option value="watir">Watir</option>
+          <option value="selenium">Selenium</option>
+        </select>
+        </form>
+      </td>
+    </tr>
+  </table>
+
+  <br/>
+  <div>
+  <label id="person_title">Mr.</label>
+  <label id="person_name_label"></label>
+  </div>
+  
+ <select name="gender" onchange="change_person_title(this.value);">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+  <input type="text" id="person_name_textbox" name="person_name" onclick="$('#tip').show();"  onchange="change_person_name(this.value);"/> 
+  <span id="tip" style="display:none; margin-left: 20px; color:gray;">Max 20 characters</span>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  
+  <div>
+    <a href="javascript:void(0);" onclick="$('#cars_select').hide();" >Hide</a>
+    <a href="javascript:void(0);" onclick="$('#cars_select').show()">Show</a>
+  </div>
+
+</div>
+</body>
+</html>

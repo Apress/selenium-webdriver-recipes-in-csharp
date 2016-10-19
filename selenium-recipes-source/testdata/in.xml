@@ -1,0 +1,4 @@
+<TestAutomation>
+  <Framework name="Watir"/>
+  <Framework name="Selenium"/>
+</TestAutomation>

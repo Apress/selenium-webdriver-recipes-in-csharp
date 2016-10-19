@@ -1,0 +1,45 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="style.css"/>
+ <script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+<div id="container">
+<h2>Text Field</h2>
+
+  <h4>Enter text</h4>
+
+  <form action="index.html">
+    <span style="width: 80px;">Username:</span> <input type="text" name="username" id="user"><br>
+    <span style="width: 80px;">Password:</span> <input type="password" name="password" id="pass"> <br/>
+    Comments: <br/>
+    <textarea id="comments" rows="2" cols="40" name="comments"></textarea> <br/>
+    <br/>
+    <input type="submit" value="Sign in"/>  
+  </form>
+
+
+  <div>
+    Disabled text field: <input type="text" id="disabled_text" name="disabled_text" disabled="true"/> <br/>
+    Readonly text field: <input type="text" id="readonly_text" name="readonly_text" readonly="true"/>
+  </div>
+
+  <div style="margin-top: 10px;">
+    <a href="javascript:void(0);" onclick="$('#user').hide();" >Hide</a>
+    <a href="javascript:void(0);" onclick="$('#user').show()">Show</a>
+  </div>
+
+  <br/>
+  <div>
+    Text file with long name: <input type="text" id="ctl00_m_g_dcb0d043_e7f0_4128_99c6_71c113f45dd8_ctl00_tAppName_I"
+  name="ctl00$m$g_dcb0d043_e7f0_4128_99c6_71c113f45dd8$ctl00$tAppName"/>
+  </div>
+
+  <hr/>
+  <input type="hidden" name="currency" value="USD"/>
+  
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+.big {
+  font-size: 150%;
+}
+
+.small {
+  font-size: 75%;
+}/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+
+*/
+
+
+
+body {
+  background-color: #FFF;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+}
+
+a img {
+  border: none;
+}
+
+a {
+  color: #0000FF;
+}
+
+body {
+  background-color: #4B7399;
+}
+
+#container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+  width: 50%;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+#flash_error, #flash_alert{
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+.clear {
+  clear: both;
+}
+
+
+#articles h2 {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+#articles h2 .comments {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+#articles .author {
+  font-style: italic;
+  color: #333;
+}
+
+#comments {
+  font-size: 12px;
+  background-color: #DDD;
+  padding: 0 20px;
+  width: 325px;
+  border: solid 1px #333;
+}
+
+.comment {
+  border-bottom: solid 1px #999;
+  margin: 15px 0;
+}
+
+.comment .author_name {
+  font-weight: bold;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 8px;
+}
+
+#errorExplanation ul {
+  margin: 2px 24px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: disc;
+}
+
+#user_nav {
+  float: right;
+  font-size: 12px;
+}
+#trash, #items, .item {
+        height: 50px;
+        width: 50px;
+}
+
+#trash {
+        color: #354e62;
+}
+
+#items {
+       margin-top: 10px;
+       width: 100%;
+}
+
+.item {
+        background: #cdcdcd;
+        color: #3b3b3b;
+        float: left;
+        margin-right: 10px;
+}
+
+.over {
+    background-color: #cedae3;
+}
+
+.out {
+    background-color: #a6bcce;
+}

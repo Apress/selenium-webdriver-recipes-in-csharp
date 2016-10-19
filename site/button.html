@@ -1,0 +1,47 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="style.css"/>
+ <script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+<div id="container">
+<h2>Button</h2>
+
+  <p><b>Standard button</b></p>
+
+  <p><button id="choose_selenium_btn" class="nav" data-id="123" style="font-size: 14px;">Choose Selenium</button></p>  
+  
+
+  <div>
+    <p><b>Submit button in a form</b></p>
+    <form name="input" action="index.html" method="get">
+    Username: <input type="text" name="user">
+    <input type="submit" name="submit_action" value="Submit"/>
+    <input type="submit" name="submit_action_2" value="Space After "/>
+    </form>
+  </div>
+
+  <div>
+    <p><b>Image button</b></p>
+    <form name="input2" action="assert.html" method="get">
+      <input type="image" src="images/button_go.jpg"/>  
+    </form>
+  </div>
+
+  <div>
+    <a href="javascript:void(0);" onclick="$('#choose_selenium_btn').hide();" >Hide</a>
+    <a href="javascript:void(0);" onclick="$('#choose_selenium_btn').show()">Show</a>
+    &nbsp;
+    <a href="javascript:void(0);" onclick="$('#choose_selenium_btn').attr('disabled', 'disabled');" >Disable</a>
+    <a href="javascript:void(0);" onclick="$('#choose_selenium_btn').removeAttr('disabled')">Enable</a>  
+  </div>
+
+  <div>
+    <form action="button.html">
+      <input type="submit" value="" id="searchBtn" style="background: url(images/search.jpg) center center no-repeat;"/>
+    </form>
+  </div>
+  
+</div>
+</body>
+</html>

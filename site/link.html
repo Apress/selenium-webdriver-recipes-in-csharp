@@ -1,0 +1,46 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="style.css"/>
+ <script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+<div id="container">
+  <h2>Hyperlink</h2>
+
+  <h3>Clicking a link</h3>
+
+  <p><a href="index.html" id="recommend_selenium_link" class="nav" data-id="123" style="font-size: 14px;">Recommend Selenium</a></p>  
+  <p><a href="link-url.html">Full link</a></p>
+  <p><a href="link-partial.html">Partial link</a></p>
+  <p><a href="link-url.html" target="_blank">Open new window</a></p>
+
+  <div>
+    <a href="javascript:void(0);" onclick="$('#recommend_selenium_link').hide();" >Hide</a>
+    <a href="javascript:void(0);" onclick="$('#recommend_selenium_link').show()">Show</a>
+  </div>
+
+  <div>
+    <p><b>Same text with different CSS class</b></p>
+    <p>
+      <a href="link-first.html" class="big">Same link</a> &nbsp;
+      <a href="link-url.html" class="small">Differenct link</a> &nbsp;
+      <a href="link-second.html" class="small">Same link</a> &nbsp; 
+  </p> 
+  </div>
+   
+  <div>
+    <h4>Same text in different divs</h4>
+    <div>
+      First div
+      <a href="link-url.html">Click here</a>
+    </div>
+    <div id="second_div">
+      Second div
+      <a href="link-partial.html">Click here</a>
+    </div>
+  </p> 
+  </div>
+   
+</div>
+</body>
+</html>

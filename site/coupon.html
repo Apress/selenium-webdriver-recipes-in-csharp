@@ -1,0 +1,37 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="style.css"/>
+ <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+ <script type="text/javascript" src="jquery.js"></script>
+ 
+ <script type="text/javascript">
+ function simulate() {
+ 
+  var currentDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+  var day = currentDate.getDate()
+  var month = currentDate.getMonth() + 1
+  var year = currentDate.getFullYear()
+  
+  var str = "Your coupon code: ";
+  var code =  Math.random().toString(36).substring(7).toUpperCase(); 
+  str += ("<b>" + code  + "</b> ");
+  str += ("used by <b>" + year + "-" + month + "-" + day + "</b>");
+
+	 $("#details").html(str);
+ }
+ </script>
+</head>
+<body>
+<div id="container">
+  <h2>Coupon</h2>
+
+	<p><button id="get_coupon_btn" onclick="simulate();">Get your coupon</button></p>
+
+	<div id="details"></div>
+	
+  <hr/>
+  
+  <p>Enter coupon: <input type="text" name="coupon" style="height: 30px;"/></p>
+  
+</body>
+</html>

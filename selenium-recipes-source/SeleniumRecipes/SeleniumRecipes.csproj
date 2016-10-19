@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{162A6571-DE8F-45C7-A110-28AF873B4675}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SeleniumRecipes</RootNamespace>
+    <AssemblyName>SeleniumRecipes</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="WebDriver, Version=2.48.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.2.48.0\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.48.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.2.48.0\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="ch01_introduction\GoogleSearchEdge.cs" />
+    <Compile Include="ch02_locator\LocatorTest.cs" />
+    <Compile Include="ch03_hyperlink\HyperLinkTest.cs" />
+    <Compile Include="ch04_button\ButtonTest.cs" />
+    <Compile Include="ch05_textfield\HiddenFieldTest.cs" />
+    <Compile Include="ch05_textfield\TextFieldTest.cs" />
+    <Compile Include="ch06_radio\RadioButtonTest.cs" />
+    <Compile Include="ch07_checkbox\CheckBoxTest.cs" />
+    <Compile Include="ch08_select\SelectTest.cs" />
+    <Compile Include="ch09_navigation\NavigationTest.cs" />
+    <Compile Include="ch09_navigation\RememberUrlTest.cs" />
+    <Compile Include="ch16_browser_profile\PhantomJSDriverTest.cs" />
+    <Compile Include="ch10_assertion\AssertionTest.cs" />
+    <Compile Include="ch11_frame\FrameTest.cs" />
+    <Compile Include="ch12_ajax\AjaxTest.cs" />
+    <Compile Include="ch13_popup\PopupTest.cs" />
+    <Compile Include="ch14_debugging\DebuggingTest.cs" />
+    <Compile Include="ch15_testdata\TestDataTest.cs" />
+    <Compile Include="ch17_advanced_user_interaction\AdvancedUserInteractionTest.cs" />
+    <Compile Include="ch18_html5\AngularJSTest.cs" />
+    <Compile Include="ch18_html5\EmberJSTest.cs" />
+    <Compile Include="ch18_html5\Html5Test.cs" />
+    <Compile Include="ch16_browser_profile\BrowserProfileTest.cs" />
+    <Compile Include="ch19_richtext\RichTextTest.cs" />
+    <Compile Include="ch20_programming\ProgrammingTest.cs" />
+    <Compile Include="ch21_optimization\OptimizationDynamicTest.cs" />
+    <Compile Include="ch21_optimization\OptimizationAssertionTest.cs" />
+    <Compile Include="ch21_optimization\OptimizationTest.cs" />
+    <Compile Include="ch22_gotchas\GotchaTest.cs" />
+    <Compile Include="ch23_remote_control\GridTest.cs" />
+    <Compile Include="ch23_remote_control\RemoteControlTest.cs" />
+    <Compile Include="helper\CSVReader.cs" />
+    <Compile Include="TestHelper.cs" />
+    <Compile Include="LoginTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ch09_navigation\firebug-1.12.5-fx.xpi" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ch01_introduction\GoogleSearchFirefox.cs" />
+    <Compile Include="ch01_introduction\GoogleSearchChrome.cs" />
+    <Compile Include="ch01_introduction\GoogleSearchDifferentBrowsersTest.cs" />
+    <Compile Include="ch01_introduction\GoogleSearchIE.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,56 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="style.css"/>
+ <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+ <link rel="stylesheet" type="text/css" href="jquery-ui.css"/>
+ <link rel="stylesheet" type="text/css" href="bootstrap-slider.css"/>
+ <script type="text/javascript" src="jquery.js"></script>
+ <script type="text/javascript" src="jquery-ui.js"></script>
+ <script type="text/javascript" src="jquery-ui-sliderAccess.js"></script>
+</head>
+<body>
+<div id="container">
+  <h2>HTML5</h2>
+
+  <a id="home_link" href="home">Home</a>
+  
+  <h4>Email field</h4>
+  <input id="email" name="email" type="email" style="height:30px; width: 280px;" 
+    data-toggle="tooltip" data-placement="right" title="must contains @"></input>
+
+  <h4>Time</h4>
+  <input id="start_time_1" name="start_time" type="time" style="height:30px; width: 120px;"></input>
+
+  
+  <h4>Slider</h2>
+  
+  <div id="pass-rate-slider" class="slider-small"></div><div class="badge badge-info" id="pass_rate" style="float:left;">15%</div>
+      
+  <script type="text/javascript" charset="utf-8">
+
+
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+	$( "#pass-rate-slider" ).slider({
+	    orientation: "horizontal",
+	    range: "min",
+	    min: 0,
+	    max: 100,
+		step: 1,
+	    value: 15,
+	    slide: function (event, ui) {
+	        var the_rate;
+	        the_rate =  ui.value + "%";
+	        $("#pass_rate").html(the_rate);
+	    }
+	});
+
+  </script>
+  
+ <br/>
+ <br/>
+</div>
+</body>
+</html>

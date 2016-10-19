@@ -1,0 +1,5 @@
+DESCRIPTION,LOGIN,PASSWORD,EXPECTED_TEXT
+Valid Login,agileway,testwise,Welcome agileway
+User name not exists,nonexists,smartass,Invalid email or password
+Password too short (shall fail),agileway,me,Invalid email or password
+Password not match,agileway,badpass,Invalid email or password

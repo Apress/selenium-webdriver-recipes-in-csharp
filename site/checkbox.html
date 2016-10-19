@@ -1,0 +1,47 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="style.css"/>
+ <link href="icheck-1.x/skins/square/red.css" rel="stylesheet">
+ <script type="text/javascript" src="jquery.js"></script>
+ <script type="text/javascript" src="icheck-1.x/icheck.js"></script>
+</head>
+<body>
+<div id="container">
+  <h2>Checkboxes</h2>
+
+  <form>
+    <input type="checkbox" name="vehicle_bike" value="on" id="checkbox_bike">I have a bike<br>
+    <input type="checkbox" name="vehicle_car" id="checkbox_car">I have a car 
+  </form>
+
+  <hr>
+  <div id="div1">
+    <input type="checkbox" name="same" value="on">  Same checkbox in Div 1
+  </div>  
+  <div id="div2">
+    <input type="checkbox" name="same" value="on">  Same checkbox in Div 2
+  </div>
+  
+  <hr/>
+  <div id="icheck-checkboxes">
+    <h4>Styled CheckBoxes</h4>
+    <p>Sports you play: </p>
+    <div style="margin-bottom: 3px;"><input type="checkbox" name="sports[]" value="Soccer"/>  Soccer </div>
+    <div style="margin-bottom: 3px;"><input type="checkbox" name="sports[]" value="Basketball"/> Basketball </div>
+    <input type="checkbox" name="sports[]" value="Baseball"/> Baseball  
+  </div>
+  
+</div>
+
+<script>
+$(document).ready(function(){
+  $('#icheck-checkboxes input').iCheck( {
+    checkboxClass: 'icheckbox_square-red',
+    radioClass: 'iradio_square-red',
+    increaseArea: '20%' // optional
+  });
+});  
+</script>
+
+</body>
+</html>

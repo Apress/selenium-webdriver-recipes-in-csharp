@@ -1,0 +1,52 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="style.css"/>
+ <link href="icheck-1.x/skins/square/red.css" rel="stylesheet">
+ <script type="text/javascript" src="jquery.js"></script>
+ <script type="text/javascript" src="icheck-1.x/icheck.js"></script>
+</head>
+<body>
+<div id="container">
+  <h2>Radio buttons</h2>
+
+  <form>
+    <input type="radio" name="gender" value="male" id="radio_male">Male<br>
+    <input type="radio" name="gender" value="female" id="radio_female">Female
+  </form>
+
+  <hr/>
+  <p>The radion buttons share the same ID and name, with value dynamcially generated</p>
+  <div id="q1" class="question">
+    <div class="question-answer col-lg-5">
+      <div class="yes-no">
+        <input id="QuestionViewModels_1__SelectedAnswerId" name="QuestionViewModels[1].SelectedAnswerId" type="radio" value="c225306e-8d8e-45b0-8261-22617d9796b5">
+        <label for="QuestionViewModels_1__SelectedAnswerId">Yes</label>
+      </div>
+      <div class="yes-no">
+        <input id="QuestionViewModels_1__SelectedAnswerId" name="QuestionViewModels[1].SelectedAnswerId" type="radio" value="85ff8db7-1c58-47a2-a978-581200fb7098">
+        <label for="QuestionViewModels_1__SelectedAnswerId">No</label>
+      </div>
+    </div>
+  </div>
+  
+  <hr/>
+  <div id="icheck-radios">
+    Gender: 
+    <input type="radio" name="sex" id="q2_1" value="male"> Male  &nbsp; 
+    <input type="radio" name="sex" id="q2_2" value="female"> Female
+  </div>
+  
+</div>
+
+<script>
+$(document).ready(function(){
+  $('#icheck-radios input').iCheck( {
+    checkboxClass: 'icheckbox_square-red',
+    radioClass: 'iradio_square-red',
+    increaseArea: '20%' // optional
+  });
+});  
+</script>
+
+</body>
+</html>

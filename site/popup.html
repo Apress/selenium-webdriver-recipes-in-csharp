@@ -1,0 +1,41 @@
+<html>
+<head>
+ <title>Selenium Recipes: Popup</title>
+ <link rel="stylesheet" type="text/css" href="style.css"/>
+ <link rel="stylesheet" type="text/css" href="summernote-0.6.3/bootstrap/bootstrap.min.css"/>
+ <script type="text/javascript" src="jquery.js"></script>
+ <script type="text/javascript" src="summernote-0.6.3/bootstrap/bootstrap.min.js"></script>
+ <script type="text/javascript" src="bootbox.js"></script>
+</head>
+<body>
+<div id="container">
+  <h2>Popup</h2>
+
+  <h3>Upload file</h3>
+
+  Select file: <input type="file" name="document[file]" id="files" size="60"/>
+  
+  <br/>
+  <p> 
+    <b>Modal Web Dialogs (only supported in IE)</b> <br/>
+	<a href="javascript:void(0);" onclick="window.showModalDialog('button.html')">Show Modal Dialog</a>
+  </p>
+  
+  <input type="text" name="status"/> 
+   <br/>
+   <br/>
+   <br/>
+
+  <a href="javascript:void(0);" id="bootbox_popup" onclick="confirm();">Confirm</a>
+</div>
+</body>
+
+<script>
+ function confirm() { 
+    bootbox.confirm("Are you sure?", function(result) {
+      
+    }); 
+  }
+</script>
+
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="style.css"/>
+ <script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+<div id="container">
+  <h2>Selenium Locators</h2>
+
+  <div id="message">
+  </div>
+  
+  <form>
+    <div>
+      <input type="text" name="comment"/> 
+    </div>
+    <a href="#"class="btn btn-default" id="cancel_link" onclick="$('#message').html('clicked cancel link')">Cancel</a>
+    <input type="submit" id="submit_btn" class="btn btn-deault btn-primary" value="Submit"
+      onclick="$('#message').html('clicked submit button')"
+    ></input>    
+  </form>
+
+  <hr>
+  <div id="div1">
+    <input type="checkbox" name="same" value="on">  Same checkbox in Div 1
+  </div>  
+  <div id="div2">
+    <input type="checkbox" name="same" value="on">  Same checkbox in Div 2
+  </div>
+  
+</div>
+</body>
+</html>
